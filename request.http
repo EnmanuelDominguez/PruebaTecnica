@@ -1,0 +1,33 @@
+###
+GET http://localhost:8080/api HTTP/1.1
+
+###
+POST http://localhost:8080/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_email": "enmanueldominguez",
+    "username": "enmanueld10",
+    "user_password": "Wars9280",
+    "firstname": "enmanuel",
+    "lastname": "dominguez",
+    "phone_number": "1",
+    "address": "cra 84"
+}
+
+###
+DELETE http://localhost:8080/api/1 HTTP/1.1
+
+###
+PUT http://localhost:8080/api/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_email": "enmanuel_dominguez@gmail.com",
+    "username": "enmanueld10",
+    "user_password": "Wars9280",
+    "firstname": "Enmanuel",
+    "lastname": "Dominguez",
+    "phone_number": "0",
+    "address": ""
+}
