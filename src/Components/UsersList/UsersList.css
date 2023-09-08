@@ -1,0 +1,12 @@
+.tabledesign td{
+    border-color: #15B1BB;
+    border-width: 0.1vh;
+    border-top: 0;
+
+}
+.tableheaderdesign th{
+    text-align: center;
+    background-color: lightblue;
+    border-color: #15B1BB;
+    border-width: 0.1vh;
+}

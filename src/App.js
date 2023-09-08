@@ -6,7 +6,19 @@ import Form from './Components/Form/Form';
 
 function App() {
 
+  const [user, setUser] = useState({
+    user_email: '',
+    username: '',
+    user_password: '',
+    firstname: '',
+    lastname: '',
+    phone_number: 0,
+    address: ''
+  });
+
   const [users, setUsers] = useState([])
+
+  const [listUpdated, setListUpdated] = useState(false);
 
   useEffect(() => {
     const getUsers = () => {
@@ -15,7 +27,8 @@ function App() {
         .then(res => setUsers(res))
     }
     getUsers()
-  }, [])
+    setListUpdated(false)
+  }, [listUpdated])
 
   return (
 
@@ -25,11 +38,11 @@ function App() {
         <div className='row'>
           <div className='col-sm'>
             <h2 style={{ textAlign: 'center' }}>Users List</h2>
-            <UsersList users={users} />
+            <UsersList users={users} setListUpdated={setListUpdated}/>
           </div>
           <div className='col-sm'>
             <h2 style={{ textAlign: 'center' }}>Users Form</h2>
-            <Form />
+            <Form user={user} setUser={setUser}/>
           </div>
         </div>
       </div>
