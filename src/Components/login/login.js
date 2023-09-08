@@ -19,7 +19,7 @@ const Login = () => {
                                     <label class="form-label" for="form3Example4">Password</label>
                                 </div>
                                 <div class="text-center text-lg-start mt-4 pt-2">
-                                    <button type="button" class="btn btn-primary btn-lg"><a href="/registers" class="link-danger">Login</a></button>
+                                    <button type="button" class="btn btn-primary btn-lg"><a href="/registers" class="">Login</a></button>
                                     <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="/register" class="link-danger">Register</a></p>
                                 </div>
                             </form>
