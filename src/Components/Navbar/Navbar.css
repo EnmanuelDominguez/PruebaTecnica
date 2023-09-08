@@ -1,0 +1,9 @@
+.container-header{
+    padding: 0.5vh 5vw 0.5vh 5vw;
+}
+.cointainer-header, img{
+    margin-right: 1vw;
+}
+.navbar-brand{
+    font-size: 2.5vh;
+}

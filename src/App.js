@@ -1,27 +1,40 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import './App.css';
-import Navbar from './Components/Navbar';
-import UsersList from './Components/UsersList';
+import Navbar from './Components/Navbar/Navbar';
+import UsersList from './Components/UsersList/UsersList';
+import Form from './Components/Form/Form';
 
 function App() {
 
-  useState [users, setusers] = useState(initialState)
+  const [users, setUsers] = useState([])
+
+  useEffect(() => {
+    const getUsers = () => {
+      fetch('http://localhost:8080/api')
+        .then(res => res.json())
+        .then(res => setUsers(res))
+    }
+    getUsers()
+  }, [])
 
   return (
+
     <Fragment>
       <Navbar brand="New InnTech App" />
-      <div className='container'>
+      <div className='container-body'>
         <div className='row'>
           <div className='col-sm'>
-            <h2 style={{textAlign: 'center'}}>Users List</h2>
-            <UsersList/>
+            <h2 style={{ textAlign: 'center' }}>Users List</h2>
+            <UsersList users={users} />
           </div>
           <div className='col-sm'>
-            <h2 style={{textAlign: 'center'}}>Users Form</h2>
+            <h2 style={{ textAlign: 'center' }}>Users Form</h2>
+            <Form />
           </div>
         </div>
       </div>
     </Fragment>
+
   );
 }
 
