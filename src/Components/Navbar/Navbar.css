@@ -1,7 +1,7 @@
 .container-header{
-    padding: 0.5vh 5vw 0.5vh 5vw;
+    padding: 0.5vh 5vw 0.5vh 40vw;
 }
-.cointainer-header, img{
+.container-header, img{
     margin-right: 1vw;
 }
 .navbar-brand{

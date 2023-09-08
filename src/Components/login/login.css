@@ -1,0 +1,22 @@
+.fixer {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    bottom: 25%;
+    right: 25%;
+    margin: auto;
+}
+.fixer button{
+    margin-left: 38%;
+    text-align: center;
+}
+.fixer p{
+    text-align: center;
+}
+.formstyle {
+    border-radius: 5%;
+    align-items: center;
+    background-color: lightblue;
+    padding: 10% 10% 10% 10%;
+    margin: -20% -20% -20% -20%;
+  }

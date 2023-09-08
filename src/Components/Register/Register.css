@@ -1,0 +1,12 @@
+
+.fixer {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    bottom: 25%;
+    right: 30%;
+    margin: auto;
+}
+.fixer button{
+    margin-left: 46%;
+}
