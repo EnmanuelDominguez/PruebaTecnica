@@ -3,6 +3,7 @@ import './Form.css'
 
 const form = ({ user, setUser }) => {
 
+    //Save fields information while typing function
     const handleChange = e => {
         setUser({
             ...user,

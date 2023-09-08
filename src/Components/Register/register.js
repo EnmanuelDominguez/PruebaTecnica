@@ -4,6 +4,7 @@ import Form from '../Form/Form';
 
 function App() {
 
+    //Initial State for DB Fields
     const [user, setUser] = useState({
         user_email: '',
         username: '',
@@ -16,6 +17,7 @@ function App() {
 
     const [, setUsers] = useState([])
 
+    //List Update for page reload
     const [listUpdated, setListUpdated] = useState(false);
 
     useEffect(() => {
