@@ -6,7 +6,7 @@
 .pnp.js
 /server.js
 /routes.js
-/request.https
+* .https
 
 # testing
 /coverage
