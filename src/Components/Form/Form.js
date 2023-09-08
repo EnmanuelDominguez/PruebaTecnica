@@ -15,10 +15,10 @@ const form = ({ user, setUser }) => {
     const handleSubmit = () => {
         //Data checkout
         if (user.user_email === '' || user.username === '' || user.user_password === '' || user.firstname === '' || user.lastname === '') {
-            alert('Todos los campos obligatorios deben ser llenados.')
+            alert('Required fields need to be filled.')
         } else {
 
-            //Data Query
+        //Data Query POST
             const requestInit = {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -27,7 +27,7 @@ const form = ({ user, setUser }) => {
             fetch('http://localhost:8080/api', requestInit)
                 .then(res => res.text())
                 .then(res => console.log(res))
-                alert('Datos registrados con éxito.')
+                alert('Data loaded successfully.')
         }
         //Data State Reset
         setUser({
